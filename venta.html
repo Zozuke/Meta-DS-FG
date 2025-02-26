@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Aviones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .avion {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .avion img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .formulario {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #003366;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+  <script defer src="menu.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<header>
+    <h1>Venta de Aviones</h1>
+</header>
+
+<div class="container">
+    <div class="avion">
+        <img src="https://via.placeholder.com/200" alt="Avión 1">
+        <div>
+            <h2>Boeing 747</h2>
+            <p>Capacidad: 416 pasajeros<br>Alcance: 13,450 km<br>Precio: $380 millones</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+
+    <div class="avion">
+        <img src="https://via.placeholder.com/200" alt="Avión 2">
+        <div>
+            <h2>Airbus A320</h2>
+            <p>Capacidad: 180 pasajeros<br>Alcance: 6,150 km<br>Precio: $110 millones</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+
+    <div class="formulario">
+        <h2>Contacto</h2>
+        <p>Si estás interesado en alguno de nuestros aviones, completa el formulario:</p>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
