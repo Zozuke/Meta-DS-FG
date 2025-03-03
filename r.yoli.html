@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant.yoli</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="menu.js"></script>
+    <!-- Agregar Bootstrap si es necesario -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+  
+  
+  <style>
+  
+    /* Estilo general */
+    body {
+margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(050deg, #0.0.0.3, #0.0.0.6);
+      color: black;
+      text-align: center;
+    }
+        
+        
+      
+
+    /* Encabezado */
+    #header {
+      background: rgba(red);
+      padding: 20px 5;
+      box-shadow: 0 4px 6px rgba(0, 0, 9, 0.2);
+      position: fixe d;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    #header h1 {
+      font-size: 1,6rem;
+      letter-spacing: 9px;
+      color: black;
+      margin:0;
+      text-align:center;
+      text-align: lef t;
+    }
+      
+
+    /* Sección principal */
+    #main {
+      margin-top: 100px;
+      padding: 50px 20px;
+    }
+
+    #main h2 {
+      font-size: 2rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    
+       #main h3 {
+      font-size: 3rem;
+      text-shadow: 2px 18px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+       }
+       
+       
+       #main h4{
+      font-size: 1rem;
+      text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+       }
+       
+       
+       
+      #main h5{
+      font-size: 1rem;
+      color:red;
+      text-align:center;
+      
+       }
+       
+       
+      
+    #main p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #474b4e;
+    }
+    
+    
+    
+    
+    
+
+    /* Pie de página */
+    #footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      font-size: 0.9rem;
+      position: fixe d;
+      bottom: 0;
+      width: 100%;
+      color:#fff9;
+      text-align:center;
+      
+    }
+
+    /* Botones */
+    #button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff758c;
+      border-radius: 25px;
+      margin: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    #button:hover {
+      background-color: #ffe600;
+      transform: scale(1.1);
+    }
+
+    /* Caja destacada */
+    #highlight {
+      background-color: rgba(0.0.0.0.3);
+      border:1px solid #fff;
+      border-radius: 12px;
+      padding: 0px;
+      margin: 0px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0.8px 2px 10px  #3133f9;
+    }
+    
+    
+    
+    
+      #highlight h4 {
+      background-color: rgba(0.0.0.0.1);
+      font-size: 1rem;
+      color:#474b4e;
+   }
+   
+   
+   
+   
+   
+   
+   /* Class */
+   .A{
+      font-size: 1.4rem;
+      text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color:#474b4e;
+       
+   }
+   
+   
+   
+   
+      .B{
+      font-size: 2rem;
+      text-shadow: 2px 10px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color:black;
+       
+      }
+      
+      
+      
+      
+      
+      .C{
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #474b4e;
+      text-align:center;
+          
+      }
+      
+      
+      
+      
+      .D{
+      font-size: 3rem;
+      text-shadow: 2px 10px 5px rgba(0, 0, 0, 0.5);
+     
+      }
+      
+      
+      
+      
+      
+      
+       .E{
+      font-size: 2rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color:black ;
+      
+      }
+      
+      
+      
+      
+      
+      .F{
+     font-size: 1.5rem;
+text-shadow: 0.5px 0px 0px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      
+      }
+      
+      
+      
+      
+    
+      .G{
+     font-size: 0.8rem;
+      text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color:red;
+      }
+      
+      
+      
+      
+      .H{
+     font-size: 1rem;
+      text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color:black;
+      }
+      
+      
+      
+      
+      
+      
+      .I{
+     font-size: 0.9rem;
+      text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color:black;
+      }
+      
+      
+      
+      
+      .img{
+      
+        width:400px;
+        height:180px;
+         display: block;
+            margin: auto;
+        border-radius: 8px;
+        
+      }
+      
+      .Xz{
+          
+       width:200px;
+        height:80px;
+         display: block;
+            margin: auto;
+        border-radius: 8px;
+        
+          
+          
+      }
+      
+      .Rt{
+          
+      font-size: 1rem;
+      text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+          
+          
+      }
+      
+      
+    
+
+    
+  </style>
+  
+</head>
+<body>
+    <container>
+    
+    <!-- Aquí se insertará el menú -->
+
+ 
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <div class="Rt">RESTAURANTE YOLI </div>
+    
+
+        <img class="Xz" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/fd/d3/53/front.jpg">
+    
+   
+   
+   
+   
+   
+   
+   
+   
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+
+            <br>
+            <br>
+ <label class="A">Restaurante 5★   CUP ( $$-$$$$ )</label>
+ <br>
+
+<label class="F"> Aquí podrías hacer tu pedido desde su hogar, transporte asegurado y óptima calidad <span style="color:blue">mensajería en todas las provincias de la habana</span> Usted merece el mejor trato. </label>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+        
+          </br>
+            
+            <div>
+            
+        <div id="highlight">
+            <br>
+        <label class="D"> PIZZAS  </label>
+        <br>
+    <label class="E"> Pizza de Aceituna </label>
+    <br>
+            <a href="pp.html">
+        <img class="img" src="https://i.ibb.co/mCsdtRBr/20250212-170905.jpg"></a>
+<label class="F"> Ración individual y doble ración de queso. Pizza con masa especial, queso gouda salsa de tomate y Aceituna </label>
+<br>
+<label class="G">5 MLC  -  $ 1500 CUP </label>
+
+   </highlight>
+   
+      </div>
+    
+       </br>
+     
+          <div>
+     <div id="highlight">
+       
+      <label class="E"> Pizza Mixta</label></h2>
+      <br>
+           <a href="pp.html">
+        <img class="img" src="https://i.ibb.co/5h7Yq3gB/20250212-172322.jpg"></a>
+<label  class="F"> Racion individual y doble racion de queso Jamón queso piña cebolla Ají pimiento chorizo </label><br>
+<label class="G"> 11 MLC -  $ 3300CUP </label>
+
+   </highlight>
+
+      </div>  
+       
+        </br>
+      
+          <div>
+     <div id="highlight">
+      
+  <label class="E"> Pizza de Chorizo</label>   
+  <br>
+             <a href="pp.html">
+        <img class="img" src="https://i.ibb.co/HTLkp3tz/20250212-172635.jpg"></a>
+ <label class="F"> Ración individual o agregos de chorizo, masa sueve exquisita a su paladar </label>
+ <br>
+  <label class="G"> 8 MLC  - $ 2400 CUP</label>
+  
+  </highlight>
+  
+     </div>
+  
+        <br>
+        
+           <div>
+     <div id="highlight">
+    <label class="E"> Pizza de Jamón </bale>
+    <br>
+          <a href="pp.html">
+<img class="img" src="https://i.ibb.co/Kz2xQcJm/20250212-171946.jpg"></a>
+<label class="F">  Ración individual y doble ración de queso y Jamón.
+Pizza con masa especial, queso gouda salsa de tomate y Jamón </label> <br>
+<label class="G"> 6 MLC  -  $ 1800 CUP </label>
+   </highlight>
+
+    </div>
+    
+      <br>
+      
+       <div>
+            <div id="highlight">
+  <ladel class="D">SPAGUETIS</ladel>
+  <br>
+ <ladel class="E"> Spaguetis Napolitano </label>
+ <br>
+         <a href="ps.html">
+        <img class="img" src="https://i.ibb.co/hR9tBKSd/20250212-174048.jpg"></a>
+<label class="F">Ración individual de ( 400g ) y doble ración de queso<br>
+spaguetis napolitano sabor especial </label><br>
+<label class="G"> 5 MLC  - $ 1500 CUP </label>
+
+        </highlight>
+      </div>
+     
+          <br>
+          
+            <div>
+             <div id="highlight">
+<label class="E"> Spaguetis de Jamón y Queso</label>
+<br>
+    <a href="ps.html">
+          <img class="img" src="https://i.ibb.co/d0Ww7wzv/20250212-174104.jpg"></a>
+<label class="F"> Spaguetis de queso gouda jamón y salsa italiana  </lable><br>
+<label class="G"> 7 MLC -  $ 2100 CUP </label>
+
+       </highlight>
+
+      </div>
+
+          <br>
+      
+           <div>
+              <div id="highlight">
+   <label class="E"> Spaguetis Sencillo</label>
+   <br>
+          <a href="ps.html">
+        <img class="img" src="https://i.ibb.co/Y4spZbc2/20250212-174118.jpg"></a>
+    <label class="F">Espaguetis sencillo queso gouda y salsa italiana </label><br>
+      <label class ="G"> 4 MLC - $1200 CUP </label><br> <br>
+        </highlight>
+        
+       </div> 
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+      
+    <label class="H"> Haga su pedido y disfrute en  su hogar un delicioso paladar </label>
+            <br>
+            <br>
+            <br>
+            <br>
+    <label class="I"> pizzeria digital, para compartir en familia,<br> haga su pedido pronto , eficiencia en calidad, un exclusivo trato al cliente,<br> atención  rápida,con mensajería hasta la puerta de su hogar </label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <footer id="footer">
+            <br>
+            <br>
+            <br>
+            
+            
+        <label class="J"> FGstudio podría diseñar un catálogo para su negocio y que sea accesible en Internet </label>  
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="registro.html">OBTENGA UNA PÁGUINA WEB PARA SU NEGOCIO</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            
+           <h6> ©️ 2025 FGstudio todos los derecho reservado </h6>
+            
+            
+            
+            
+            
+
+  <!-- Agregar Bootstrap JavaScript si es necesario -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  
+  
+            
+            
+        </footer>
+        </main>
+    </div>
+</body>
+</html>

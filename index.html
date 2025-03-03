@@ -1,25 +1,484 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="menu.js"></script>
-    <!-- Agregar Bootstrap si es necesario -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  
+    <style>
+        
+        
+/* Estilo general */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+background: linear-gradient(050deg, #0.0.0.1, #0.0.0.6);
 
-    <!-- Aquí se insertará el menú -->
-    <div id="menu-container"></div>
+backgroun d: linear-gradient(45deg, #ff416c, #ff4b2b);
+      color:black;
+      text-align: center;
+    }
+        
+        
+      .container mt-5 h1{
+          text-decoration:black;
+          
+          
+      }
+        
+        
+ 
+      .img{
+        width: 50px;
+        height: 50px; 
+        border-radius: 100%;
+        display:center;
+        margin: center;
+    
+      }
+        
+        
+        
+    /* Estilo general */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+background: linear-gradient(050deg, #0.0.0.1, #0.0.0.6);
 
-    <div class="container mt-5">
-        <h1>Bienvenido a mi página</h1>
-        <p>Este es el contenido de la página de inicio1 y<a href="pagina2.html">entrar ala pagina dos</a> y<a href="venta.html">la venta de perritos</a> y eso es todo</p>
+backgroun d: linear-gradient(45deg, #ff416c, #ff4b2b);
+      color:black;
+      text-align: center;
+    }
+
+    /* Encabezado */
+    #header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+      position: fixe d;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      color:#efb810;
+      text-shadow: 2px 13px 3px rgba(0, 0, 0, 0.5);
+
+    }
+    
+    
+    
+    
+
+    #header h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      color: #fff;
+      margin: 0;
+      font-size: 3rem;
+      text-shadow: 5px 13px 5px rgba(0, 0, 0, 0.5);
+
+    }
+
+    /* Sección principal */
+    #main {
+      margin-top: 100px;
+      padding: 50px 20px;
+    }
+
+    #main h2 {
+      font-size: 3rem;
+      text-shadow: 2px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+      #main h3 {
+      font-size: 2.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+      
+    
+
+    #main p {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Pie de página */
+    #footer {
+      background: rgba(0, 0, 0, 9.9);
+      padding: 10px 0;
+      font-size: 0.9rem;
+      position: fixe d;
+      bottom: 0;
+      width: 100%;
+      color: #fff;
+    }
+    
+    
+    
+     #footer h1{
+     font-size: 2rem;
+      line-height: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+     #footer h2 {
+     font-size: 1.2rem;
+      line-height: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      color:#fff;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    
+   
+     #footer h3 {
+     font-size: 1.1rem;
+      line-height: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    
+    
+    
+     #footer h5 {
+     font-size: 0.7rem;
+      line-height: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      color:#fff;
+   }
+    
+
+               
+        #footer #uno{
+        display:block;
+        text-align:center;
+        font-size: 1rem;
+        
+    }
+    
+    
+       #footer #dos{
+        display:block;
+        text-align:center;
+        font-size: 1rem;
+    }
+    
+    
+    
+    #footer #tres{
+        display:block;
+        text-align:center;
+       font-size: 1rem;
+    }
+    
+    
+   
+    #footer #cuatro {
+        display:block;
+        text-align:;
+        font-size: 1rem;
+        text-align: left, 5rem , 22px;
+    }
+    
+    
+    
+    
+
+
+    /* Botones */
+    .button {
+      display: inline-block;
+      padding: 9px 10px;
+      font-size: 1rem;
+      text-decoration:none;
+      color:black;
+      background-color:#bcbcbc;
+      border-radius:25px;
+      margin: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+
+    
+    .button:hover {
+      background-color:#bcbcbc;
+      transform: scale(1.1);
+    }
+
+    /* Caja destacada */
+    #highlight {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 0.2px solid blue;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+      text-decoration: red;
+
+
+    }
+    
+    
+        /* caja de menu */
+      .offcanvas-body{
+          background-color :black ;
+          
+      }
+        
+        
+        /* color de la caja del menu */
+       .nav-link{
+           color:#fff;
+           font-size: 1.2rem;
+       }
+        
+        
+        
+        .A{
+            
+       font-size: 2rem;
+      line-height: 1.6;
+    text-shadow: 2px 11px 5px rgba(0, 0, 0, 0.5);
+        text-align: left;
+            
+        }
+        
+        
+        .carousel-caption d-none d-md-block{
+
+            
+       font-size: 1rem;
+      line-height: 1.6;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
+        text-align: left;
+    
+        
+        }
+        
+        .Zp{
+            color:#fff;
+            
+            
+        }
+        
+        
+        
+        
+    </style>
+  <body>
+      
+      
+      
+    <!-- Este es el codigo del  menú -->
+
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+
+    <img class="img" src="https://i.ibb.co/LDG7Gf2d/fotor-ai-2025020222510.jpg"> <br>
+ <div class="A">EL BATAZO</div>
+
+      <br>
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Preguntas Frecuentes </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+     
+     
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <br>
+            <br>
+            <br>
+    <li class="nav-item"><a class="nav-link" href="pagina1.html">Que es FGstudio</a></li>
+          <br>
+    <li class="nav-item"><a class="nav-link" href="pagina2.html">Que es FX-Delta </a></li>
+          <br>
+    <li class="nav-item"><a class="nav-link" href="pagina3.html">Que es una página web y sus usos </a></li>
+            <br
+   <li class="nav-item"><a class="nav-link" href="pagina4.html">Que es un dominio</a></li>
+              <br>
+   <li class="nav-item"><a class="nav-link" href="pagina5.html">Que es un subdominio</a></li>
+             <br>
+   <li class="nav-item"><a class="nav-link" href="pagina6.html">Como Adquirir su propia página web para sus proyectos</a></li>
+             <br>
+   <li class="nav-item"><a class="nav-link" href="pagina7.html">Más proyectos de nosotros</a></li>
+             <br>
+   <li class="nav-item"><a class="nav-link" href="pagina8.html">Como contactarnos</a></li>
+              <br>
+   <li class="nav-item"><a class="nav-link" href="pagina9.html">Que es un desarrollador web</a></li>
+               <br>
+   <li class="nav-item"><a class="nav-link" href="pagina10.html">Que es un Freenlancer </a></li>
+                <br>
+   <li class="nav-item"><a class="nav-link" href="pagina11.html">Como ser un freenlancer</a></li>
+               <br>
+   <li class="nav-item"><a class="nav-link" href="pagina12.html">Registrese para aprender sobre este mundo maravilloso, Desarrollo web</a></li>
+   
+  <br>
+  <br>
+   <br>
+   <li class="Zp">   ╰━─━─━─≪✠≫─━─━─━╯
+ </li>
+
+        </ul>
+      </div>
     </div>
+  </div>
+</nav>
+      <!-- aquí termina el codio del menu -->
+      
+      
+    
+ <header id="header">
+      <br>
+       <br>
+       <br>
+      <br>
+     <br>
 
-    <!-- Agregar Bootstrap JavaScript si es necesario -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+       <h1>EMPRESA<br> DE <br>DISEÑO <br> Y<br> DESARROLLO<br> DE<br> PAGINAS WEB </h1> <br> <br>
+       <h2> FGstudio</h2>
+         <br>
+          <br>
+         <br>
+        <br>
+       <br>
+      <br>
+     <br>
+    </header>
+              <section id="main">
+        <h2>¿ Que somos ?</h2>
+        <p> <em>Somos una Empresa basada en el Diseño web y marquetin digital, nuestro propósito es expandir al mercado mundial sus ofertas laborales y promover su negocio, dándole un espacio en la internet. Contamos con  un equipo Freenlancer programadores y diseñadores en el campo del marquetin digital desarrollo de app creación y restauracion de páginas web.Para lograr una mejor satisfacción de nuestros clientes  diseñamos en una página web las promociones de su negocio y asi podrán ser asequible en cualquier parte del planeta.</em></p>
+        <br>
+        <br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDimSrIqF6oJWBvAlcsagCVF8_nzbuRguI7N4-mNV7pA&s">
+        
+        <br>
+        <h3><strong><i> por que usted merece una excelente promoción para sus proyectos. Cuente con nosotros </i></strong></h3> 
+        <br>
+        <br>
+        
+    <h2> Objetivo de la Empresa </h2>
+    <p> <em>Sabemos que dadas las circunstansias, en muchas ocasiones se nos dificulta darle una optima promoción a nuestros proyectos. La tecnología a avanzado a tal punto que usted pudiera elevar su forma de promover su proyecto. Hoy en día todo es digital y la tecnología avanza a pasos gigantescos, Nuestra empresa busca facilitar El marquetin digital de nuestros clientes atraves de una página web en Internet y promover el  mercado de nuestros clientes a un paso más arriba. Donde todos puedan tener el absceso del servicio que usted promueva </em></p>
+    
+    
+    <br>
+     <br>
+      
+  
+   <h2>Visita algunos de nuestros proyectos</h2>
+         
+      </section>
+
+      <!-- AQUI COMIENSA EL CODIGO DEL CARRUSEL-->
+      
+ <div id="carouselExampleIndicators" class="carousel slide">
+    
+                
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="r.yoli.html">
+      <img src="https://i.ibb.co/7xTmRmpH/20250301-122720.jpg" width="300" height="300" class="d-block w-100" alt="..."></a>
+    </div>
+    
+    <div class="carousel-item">
+ <a href="renta.html">
+      <img src="https://i.ibb.co/Z64fkm8X/90d8cc39a267a52fa94a3579a87f9b53.jpg" width="300" height="300" class="d-block w-100" alt="..."></a>
+    </div>
+    
+    <div class="carousel-item">
+<a href="horóscopo.html">
+      <img src="https://i.ibb.co/YF0Hkfzh/images-26.jpg" width="400" height="300"  class="d-block w-100" alt="..."></a>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!-- AQUI TERMINA EL CODIGO DEL CARRUSEL -->
+
+          
+          <section id="main">
+       
+       <h2>¿Como poder prescindir de nuestros servicio?</h2>
+    <p> <em>Si le gustó nuestro trabajo y a decidido promover su protector lo felicitamos, Cuénte con nosotros y contáctenos atraves de nuestro correo o cuenta de WhatsApp. la empresa garantizará su servicio </em></p>
+    <br>
+ </section>
+<br>
+<br>
+<br>
+        <footer id="footer">
+             <br>
+            <br>
+             
+           <br>
+           <h1> FGstudio  </h1>
+           <br>
+           <br>
+           <br>
+<h2> Diseñamos su página web para llevar la publisidad de su negocio a un máximo nivel.
+usted también podría obtener su propia web y dirigirla desde su telefono móvil y PC o <a href="https://wa.me/+1(480)3864136?">  podrías aprender aqui a crear su propia web para sus prollecto </a> </h2>
+<br>
+<br>
+<br>
+ <h3> PUEDES CONTACTARNOS A TRAVEZ DE :</h3>
+ <br>
+ <br>
+ <br>
+ <a id="uno" href="mailto:webstudiofgs@gmail.com">CORREO</a>
+ <br>
+ <br>
+ 
+          
+<a id="dos" href="https://wa.me/5353571569?">WHATSAPP</a>
+
+  <br>
+  <hr>
+ <br>
+  <a id="cuatro" href="registro.html"> <span style="color :#3133e9"> <u>CREE SU CATALOGO</u></span> </a>
+  
+  <br>
+  <br>
+  
+ <h5> ©️ Empresa FGstudio, todos los derechos reservados </h5>  
+     <br>
+     <br>
+     <br>
+
+        </div>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
